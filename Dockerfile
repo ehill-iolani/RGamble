@@ -8,7 +8,7 @@ LABEL description="Blackjack Game for Iolani School"
 
 # Convenience packages
 RUN apt update
-RUN apt install -y curl git wget nano
+RUN apt install -y curl git wget nano libmagick++-dev
 
 # Install R packages
 RUN R -e "install.packages(c('shiny','bslib','magick','stringr'))"
