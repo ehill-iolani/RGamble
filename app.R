@@ -302,7 +302,7 @@ server = function(input,output) {
     }
 
     gameStart = function() {
-        if (!rvs$playing && input$betAmt > 0 && input$betAmt < rvs$credits){
+        if (!rvs$playing && input$betAmt > 0 && input$betAmt <= rvs$credits){
             rvs$betAmt = input$betAmt
             rvs$playing = TRUE
             rvs$hitting = TRUE
