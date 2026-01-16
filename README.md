@@ -25,5 +25,5 @@ Docker image
 git clone https://github.com/ehill-iolani/RGamble.git
 cd RGamble
 docker build -t blackjack:ghetto .
-docker run -dt --rm -p 3838:3838 blackjack:ghetto .
+docker run -dt --rm -p 3838:3838 blackjack:ghetto
 ```
